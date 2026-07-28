@@ -1,0 +1,19 @@
+---
+title: Scenarios
+---
+<h1>Scenarios — the unit-test suite</h1>
+<p>Every dimension of life on land must be covered by at least one scenario of life afloat. Each scenario is written Given/When/Then and ends in one of three states: <span class="badge pass">pass</span> (life aboard handles it), <span class="badge fail">fail</span> (the current configuration breaks — which generates requirements or a decision), or <span class="badge open">open</span> (not yet tested against reality). A failing test is a success of the method: it's €400 in January instead of €140k in June.</p>
+
+{% assign dims = site.scenarios | group_by: "dimension" | sort: "name" %}
+{% for d in dims %}
+<h2>{{ d.name }}</h2>
+<ul class="item-list">
+  {% assign items = d.items | sort: "id" %}
+  {% for s in items %}
+  <li><code>{{ s.id }}</code> <span class="badge {{ s.status }}">{{ s.status }}</span> <a href="{{ s.url | relative_url }}">{{ s.title }}</a></li>
+  {% endfor %}
+</ul>
+{% endfor %}
+
+<h2>Coverage rule</h2>
+<p>Before any purchase decision (Gate G2 on the <a href="{{ '/plans/roadmap.html' | relative_url }}">roadmap</a>), no scenario may remain <span class="badge open">open</span> in a dimension marked <em>Must</em> in the requirements matrix. Spot a dimension of life with no scenario? That's a coverage gap — add one.</p>

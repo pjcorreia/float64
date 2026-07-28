@@ -32,6 +32,10 @@ Requirements derived from data, not brochures. Before any platform decision: 3�
 
 Content switched from PT-PT to English on 2026-07-28 (folders renamed: `planos`→`plans`, `investigacao`→`research`, `telemetria`→`telemetry`). Portuguese terms kept where they're the proper noun (*nortada*, Mar da Palha, carta de Marinheiro).
 
+## DEC-006 — Site architecture: plain Jekyll on GitHub Pages ✅ decided
+
+The repo doubles as the project site, built by GitHub Pages' built-in Jekyll — no Actions, no npm, no build step. Custom layouts + CSS; blog entries in `_posts/`, boat archive as the `_boats` collection, scenario suite as the `_scenarios` collection (front matter: `id`, `status` pass/fail/open, `dimension`). Adding a markdown file is publishing. Constraint accepted: only GitHub-whitelisted Jekyll plugins.
+
 ---
 
 ## Immediate backlog (from roadmap v0.2)

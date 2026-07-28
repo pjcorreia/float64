@@ -1,17 +1,42 @@
 title: float64
+tagline: Double-precision floating home
 description: >-
-  Double-precision floating home. Plans, research and telemetry for migrating
-  one engineer (and one dog) from solid ground to the Tagus.
-theme: jekyll-theme-cayman
+  Plans, research and telemetry for migrating one engineer (and one dog)
+  from solid ground to the Tagus.
+url: "https://pjcorreia.github.io"
+baseurl: "/float64"
+timezone: Europe/Lisbon
 
-# GitHub Pages enables these by default; listed here so local `jekyll serve` matches.
+permalink: /log/:title/
+
+collections:
+  boats:
+    output: true
+    permalink: /boats/:name/
+  scenarios:
+    output: true
+    permalink: /scenarios/:name/
+
+defaults:
+  - scope: {path: ""}
+    values: {layout: default}
+  - scope: {path: "", type: posts}
+    values: {layout: post}
+  - scope: {path: "", type: boats}
+    values: {layout: boat}
+  - scope: {path: "", type: scenarios}
+    values: {layout: scenario}
+
+# GitHub Pages enables these by default; listed so local `jekyll serve` matches.
 plugins:
   - jekyll-relative-links
   - jekyll-optional-front-matter
-  - jekyll-readme-index
   - jekyll-default-layout
   - jekyll-titles-from-headings
 
 relative_links:
   enabled: true
   collections: true
+
+exclude:
+  - README.md

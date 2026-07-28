@@ -1,0 +1,10 @@
+---
+title: Log
+---
+<h1>Log</h1>
+<p class="meta">Findings, visits, conversations and course corrections — newest first.</p>
+<ul class="item-list">
+{% for post in site.posts %}
+  <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a><span class="meta"> — {{ post.date | date: "%-d %b %Y" }}</span></li>
+{% endfor %}
+</ul>

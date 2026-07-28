@@ -1,0 +1,21 @@
+---
+title: Boats
+---
+<h1>Boats</h1>
+<p class="meta">Archive of builders and models worth tracking. Statuses: <span class="badge shortlist">shortlist</span> <span class="badge conditional">conditional</span> <span class="badge research">research</span> <span class="badge rejected">rejected</span></p>
+<div class="table-scroll">
+<table>
+  <tr><th>Model</th><th>Type</th><th>CE</th><th>Size</th><th>Status</th></tr>
+  {% assign boats = site.boats | sort: "model" %}
+  {% for b in boats %}
+  <tr>
+    <td><a href="{{ b.url | relative_url }}">{{ b.builder }} {{ b.model }}</a></td>
+    <td>{{ b.type }}</td>
+    <td>{{ b.ce_category | default: "?" }}</td>
+    <td>{% if b.length_m %}{{ b.length_m }}×{{ b.beam_m }} m{% else %}TBC{% endif %}</td>
+    <td><span class="badge {{ b.status }}">{{ b.status }}</span></td>
+  </tr>
+  {% endfor %}
+</table>
+</div>
+<p>A boat enters this archive when it's worth a second look, and leaves annotated — every entry should end with a verdict against the <a href="{{ '/scenarios/' | relative_url }}">scenario suite</a>, not a feeling.</p>

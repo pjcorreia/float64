@@ -6,30 +6,25 @@
 
 > Double-precision floating home. Plans, research and telemetry for migrating one engineer (and one dog) from solid ground to the Tagus.
 
-**Methodology: Float-Driven Development.** One engineer, one dog (Marley), and the only migration of a career where the production environment is literally the river.
-
-## The project
-
-Trade an apartment near Lisbon for a floating home — treated like any serious migration: requirements first, POC before commitment, telemetry throughout, and a rollback plan always at hand.
+**This repo is a website:** https://pjcorreia.github.io/float64/ — GitHub Pages renders it straight from `main`; pushing a markdown file is publishing.
 
 ## Structure
 
-| Folder | What lives there |
+| Path | What it is |
 |---|---|
-| `plans/` | Roadmap, requirements, [decisions](plans/decisions.md) (and the rollback plan) |
-| `research/` | Research: marinas, boats, costs, legislation, life aboard — first up: [crossing the estuary from Oeiras](research/oeiras-estuary-crossing.md) |
-| `telemetry/` | Real-world measurements: observed costs, humidity, notes from test stays |
+| `_posts/` | The log — blog entries, newest at [/log/](https://pjcorreia.github.io/float64/log/) |
+| `_boats/` | Boat archive — one file per model worth tracking, front matter carries the specs |
+| `_scenarios/` | The unit-test suite for life aboard — Given/When/Then, status `pass`/`fail`/`open` |
+| `plans/` | [Roadmap](plans/roadmap.md) and [decision log](plans/decisions.md) |
+| `research/` | Research notes (marinas, navigation, legislation, costs) |
+| `telemetry/` | Real-world measurements, land baseline first |
+| `_layouts/`, `assets/`, `_config.yml` | The site itself — plain Jekyll, no build tooling |
 
-## Current status
+## Adding content
 
-**Phase 0 — POC.** Before buying anything: sleep aboard for a few weeks (preferably in January, not July), with normal workdays in between, and Marley aboard for at least a few days. Options on the table: Airbnb/Booking in Alcântara, Parque das Nações or Seixal; Click&Boat/Samboat without leaving the dock; off-season boat-sitting; or a cruising course with liveaboard stay.
-
-## Phase 0 exit criteria
-
-- [ ] Weeks slept aboard (winter): 0
-- [ ] Remote workdays from the boat: 0
-- [ ] Marley nights aboard: 0
-- [ ] Conversations with actual liveaboards in local marinas: 0
+- **Log entry:** `_posts/YYYY-MM-DD-slug.md` with a `title` in front matter.
+- **Boat:** `_boats/slug.md` — copy an existing file, fill the spec front matter, end with a verdict.
+- **Scenario:** `_scenarios/scn-NNN-slug.md` — `id`, `title`, `status`, `dimension` in front matter, Given/When/Then in the body. Every dimension of land life must have at least one.
 
 ---
 

@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<article class="boat">
+  <h1>{{ page.builder }} {{ page.model }}</h1>
+  <p class="meta"><span class="badge {{ page.status }}">{{ page.status }}</span> · {{ page.type }}</p>
+  <table class="specs">
+    {% if page.ce_category %}<tr><th>CE category</th><td>{{ page.ce_category }}</td></tr>{% endif %}
+    {% if page.length_m %}<tr><th>Length</th><td>{{ page.length_m }} m</td></tr>{% endif %}
+    {% if page.beam_m %}<tr><th>Beam</th><td>{{ page.beam_m }} m</td></tr>{% endif %}
+    {% if page.draft_m %}<tr><th>Draft</th><td>{{ page.draft_m }} m</td></tr>{% endif %}
+    {% if page.speed_kn %}<tr><th>Speed</th><td>{{ page.speed_kn }} kn</td></tr>{% endif %}
+    {% if page.engines %}<tr><th>Engines</th><td>{{ page.engines }}</td></tr>{% endif %}
+    {% if page.website %}<tr><th>Website</th><td><a href="{{ page.website }}">{{ page.website }}</a></td></tr>{% endif %}
+  </table>
+  {{ content }}
+  <p class="backlink"><a href="{{ '/boats/' | relative_url }}">← All boats</a></p>
+</article>
