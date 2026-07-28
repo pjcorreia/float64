@@ -1,0 +1,17 @@
+title: float64
+description: >-
+  Double-precision floating home. Plans, research and telemetry for migrating
+  one engineer (and one dog) from solid ground to the Tagus.
+theme: jekyll-theme-cayman
+
+# GitHub Pages enables these by default; listed here so local `jekyll serve` matches.
+plugins:
+  - jekyll-relative-links
+  - jekyll-optional-front-matter
+  - jekyll-readme-index
+  - jekyll-default-layout
+  - jekyll-titles-from-headings
+
+relative_links:
+  enabled: true
+  collections: true
