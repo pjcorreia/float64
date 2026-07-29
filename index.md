@@ -14,8 +14,8 @@ title: Home
 
 | | |
 |---|---|
-| **Phase** | Discovery — measuring current life before choosing a platform |
-| **Critical path** | [SPK-1 — email the marina](plans/roadmap.md) |
+| **Phase** | 0 — Knowledge sprint: course, micro-rental, market survey |
+| **Critical path** | [Gate G0, then SPK-1 — email the marina](plans/roadmap.md) |
 | **Big open decision** | [DEC-004 — Oeiras vs Parque das Nações](plans/decisions.md) |
 | **POC target** | January: weeks aboard, workdays included, Marley aboard |
 

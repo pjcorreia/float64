@@ -2,10 +2,16 @@
 
 > Reconstructed from the roadmap v0.2 conversation; the original document still needs exporting from claude.ai into this file (see TODO in [decisions](decisions.md)). Structure: phases with go/no-go gates. A NO-GO at any gate is a success of the method, not a failure of the project.
 
-## Phase 0 — Spikes & unblockers *(now)*
+## Phase 0 — Knowledge sprint *(now — time-boxed, per [DEC-007](decisions.md))*
 
-- **SPK-1 — Email the marina(s).** The single question that can kill the whole project and doesn't depend on us: are liveaboards actually allowed? Critical path; feeds [SCN-012](../_scenarios/scn-012-the-marina-says-no.md). With [DEC-004](decisions.md) open, ask both Parque das Nações and Oeiras.
-- Repo, site and scenario suite up — done, you're reading it.
+Before any marina hears from us, build enough knowledge to be an informed counterpart:
+
+- **0.1 Course & licence.** Pick and book the boating course (carta de Marinheiro as baseline; evaluate going straight to Patrão Local). Knowing the licence path also answers what we're legally allowed to do ([SCN-001](../_scenarios/scn-001-weekend-crossing-from-oeiras.md)'s daytime-return constraint).
+- **0.2 Micro-rental.** Rent a moored houseboat for 2–3 nights — the cheapest possible first data point for [SCN-002](../_scenarios/scn-002-a-week-of-january-gales.md)/[SCN-003](../_scenarios/scn-003-back-to-back-video-calls.md)/[SCN-004](../_scenarios/scn-004-a-normal-tuesday-for-marley.md) before the full January POC.
+- **0.3 Market survey.** Populate the [boat archive](../boats/): more models, real pricing, delivery conditions to Lisbon, and what the used market actually offers.
+- **SPK-1 — Email the marina(s)** moves to the *exit* of Phase 0: still the question that can kill the project ([SCN-012](../_scenarios/scn-012-the-marina-says-no.md)), now asked from an informed position. With [DEC-004](decisions.md) open, ask both Parque das Nações and Oeiras.
+
+**Gate G0:** course booked or done, nights slept aboard ≥ 2, archive has ≥ 5 models with prices — then SPK-1 goes out.
 
 ## Phase 1 — Discovery: measure production
 
@@ -44,7 +50,10 @@
 
 | # | Task | Status |
 |---|---|---|
-| SPK-1 | Email marinas re: liveaboard policy (PdN + Oeiras) | **this week** |
+| 0.1a | Shortlist courses/schools (Marinheiro vs Patrão Local), prices and dates | **now** |
+| 0.2a | Find rentable moored houseboats near Lisbon, book 2–3 nights | **now** |
+| 0.3a | Market survey → boat archive: models, prices, delivery, used market | **now** |
+| SPK-1 | Email marinas re: liveaboard policy (PdN + Oeiras) | after Gate G0 |
 | 1.1a | Liveaboard interview script | todo |
 | 1.2a | Activity-log template + sensor deployment plan | todo |
 | — | Export roadmap v0.2 artifact from claude.ai into this file | todo |

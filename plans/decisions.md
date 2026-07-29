@@ -36,6 +36,10 @@ Content switched from PT-PT to English on 2026-07-28 (folders renamed: `planos`�
 
 The repo doubles as the project site, built by GitHub Pages' built-in Jekyll — no Actions, no npm, no build step. Custom layouts + CSS; blog entries in `_posts/`, boat archive as the `_boats` collection, scenario suite as the `_scenarios` collection (front matter: `id`, `status` pass/fail/open, `dimension`). Adding a markdown file is publishing. Constraint accepted: only GitHub-whitelisted Jekyll plugins.
 
+## DEC-007 — Knowledge before contact ✅ decided
+
+The marina email (SPK-1) is deferred until Phase 0 builds real knowledge: a boating course/licence path chosen and started, a couple of nights actually slept on a rented houseboat, and the [boat archive](../boats/) populated with real pricing, delivery conditions and used-market data. Rationale: walk into the marina conversation as an informed counterpart, not a dreamer — better questions, better credibility, better negotiating position. **Trade-off accepted:** the one project-killing answer (liveaboard policy, [SCN-012](../_scenarios/scn-012-the-marina-says-no.md)) arrives later; mitigation is to keep Phase 0 short and time-boxed.
+
 ---
 
 ## Immediate backlog (from roadmap v0.2)
