@@ -4,6 +4,12 @@ layout: default
 <article class="boat">
   <h1>{{ page.builder }} {{ page.model }}</h1>
   <p class="meta"><span class="badge {{ page.status }}">{{ page.status }}</span> · {{ page.type }}</p>
+  {% if page.image %}
+  <figure class="boat-photo">
+    <img src="{{ page.image | relative_url }}" alt="{{ page.builder }} {{ page.model }}">
+    {% if page.image_credit %}<figcaption class="meta">{{ page.image_credit }}</figcaption>{% endif %}
+  </figure>
+  {% endif %}
   <table class="specs">
     {% if page.ce_category %}<tr><th>CE category</th><td>{{ page.ce_category }}</td></tr>{% endif %}
     {% if page.length_m %}<tr><th>Length</th><td>{{ page.length_m }} m</td></tr>{% endif %}

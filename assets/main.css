@@ -97,5 +97,10 @@ ul.item-list { list-style: none; padding: 0; }
 ul.item-list li { padding: .5rem 0; border-bottom: 1px solid var(--line); }
 ul.item-list .meta { display: inline; margin-left: .4rem; }
 
+img { max-width: 100%; height: auto; }
+.boat-photo { margin: 1.2rem 0; }
+.boat-photo img { border-radius: 8px; }
+.boat-photo figcaption { margin-top: .3rem; }
+
 .hero { margin: 1rem 0 2rem; }
 .hero p.tagline { font-size: 1.15rem; color: var(--muted); margin-top: .2rem; }

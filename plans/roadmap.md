@@ -52,7 +52,7 @@ Before any marina hears from us, build enough knowledge to be an informed counte
 |---|---|---|
 | 0.1a | Shortlist courses/schools (Marinheiro vs Patrão Local), prices and dates | **now** |
 | 0.2a | Find rentable moored houseboats near Lisbon, book 2–3 nights | **now** |
-| 0.3a | Market survey → boat archive: models, prices, delivery, used market | **now** |
+| 0.3a | Market survey → boat archive: models, prices, delivery, used market | in progress — 5 models priced ✔; used market & delivery quotes still open |
 | SPK-1 | Email marinas re: liveaboard policy (PdN + Oeiras) | after Gate G0 |
 | 1.1a | Liveaboard interview script | todo |
 | 1.2a | Activity-log template + sensor deployment plan | todo |
