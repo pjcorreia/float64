@@ -14,4 +14,4 @@ The method is the point. No boat gets bought because a brochure looked good. The
 
 A NO-GO in February is also a success — it cost €400 to find out, instead of €140k.
 
-Everything lives here: the [roadmap](/float64/plans/roadmap.html), the [decision log](/float64/plans/decisions.html), a [boat archive](/float64/boats/), and a [scenario suite](/float64/scenarios/) that works like unit tests for life aboard. First failing test already logged — more on that in the next entry.
+Everything lives here: the [roadmap](../plans/roadmap.md), the [decision log](../plans/decisions.md), a [boat archive](/float64/boats/), and a [scenario suite](/float64/scenarios/) that works like unit tests for life aboard. First failing test already logged — more on that in the next entry.
