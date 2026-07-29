@@ -1,6 +1,6 @@
 ---
 builder: Overblue
-model: 44
+model: "44"
 type: Liveable power catamaran
 status: research
 website: https://www.overblue-yachts.com
